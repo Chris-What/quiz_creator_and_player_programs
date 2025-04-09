@@ -27,6 +27,16 @@ while True:
             print("Invalid input; please choose between A, B, C, or D.")
 
 #6. put the questions and choices in the text file
+with open(filename, "a") as file:
+    file.write(f"Question {question_num}: {question}")
+    file.write(f"\nA.) {choice_a}")
+    file.write(f"\nB.) {choice_b}")
+    file.write(f"\nC.) {choice_c}")
+    file.write(f"\nD.) {choice_d}")
+    file.write(f"\nCorrect Answer: {correct_ans}")
+    file.write("\n\n")
+
+question_num += 1
 
 #7. ask the user if they want to enter another set of questions and choices
 
