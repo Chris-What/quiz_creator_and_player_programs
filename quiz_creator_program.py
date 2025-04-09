@@ -2,6 +2,7 @@
 print("Welcome to Quiz Creator! This program allows you to create questions to be used in a quiz. To start, enter a question below.")
 
 #2. initiate the name of the text file where the quiz questions will go
+filename = "quiz_questions.txt"
 
 #3. overwrite any previous data written in the text files
 
