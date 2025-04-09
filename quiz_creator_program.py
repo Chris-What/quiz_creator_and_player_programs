@@ -24,20 +24,30 @@ while True:
         correct_ans = input("Which choice is the correct answer? (A/B/C/D): ").upper()
 
         if correct_ans not in ["A", "B", "C", "D"]:
-            print("Invalid input; please choose between A, B, C, or D.")
+            print("Invalid choice; please choose between A, B, C, or D.")
 
 #6. put the questions and choices in the text file
-with open(filename, "a") as file:
-    file.write(f"Question {question_num}: {question}")
-    file.write(f"\nA.) {choice_a}")
-    file.write(f"\nB.) {choice_b}")
-    file.write(f"\nC.) {choice_c}")
-    file.write(f"\nD.) {choice_d}")
-    file.write(f"\nCorrect Answer: {correct_ans}")
-    file.write("\n\n")
+    with open(filename, "a") as file:
+        file.write(f"Question {question_num}: {question}")
+        file.write(f"\nA.) {choice_a}")
+        file.write(f"\nB.) {choice_b}")
+        file.write(f"\nC.) {choice_c}")
+        file.write(f"\nD.) {choice_d}")
+        file.write(f"\nCorrect Answer: {correct_ans}")
+        file.write("\n\n")
 
-question_num += 1
+    question_num += 1
 
 #7. ask the user if they want to enter another set of questions and choices
+    while True:
+        next_move = input("Do you want to enter another quiz question? (yes/no): ")
+        if next_move.lower == "yes":
+            break
+        elif next_move.lower == "no":
+            break
+        else:
+            print('Invalid choice; please choose between "yes" or "no".')
+    if next_move.lower == "no":
+        break
 
 #8. display exit message when the user is done with the program
