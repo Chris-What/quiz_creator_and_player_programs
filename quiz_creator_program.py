@@ -41,13 +41,15 @@ while True:
 #7. ask the user if they want to enter another set of questions and choices
     while True:
         next_move = input("Do you want to enter another quiz question? (yes/no): ")
-        if next_move.lower == "yes":
+        if next_move.lower() == "yes":
             break
-        elif next_move.lower == "no":
+        elif next_move.lower() == "no":
             break
         else:
             print('Invalid choice; please choose between "yes" or "no".')
-    if next_move.lower == "no":
+            continue
+    if next_move.lower() == "no":
         break
 
 #8. display exit message when the user is done with the program
+print(f"Thank you for using the Quiz Creator! All quiz questions, choices, and correct answers have been saved to {filename}!")
