@@ -9,6 +9,7 @@ with open(filename, "w") as file:
     pass
 
 #4. initiate the start of the question numbers to be used in the text file for formatting
+question_num = 1
 
 #5. ask the user to enter a question, four choices to choose from, and the correct answer
 
