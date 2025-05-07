@@ -16,6 +16,8 @@ except FileNotFoundError:
     exit()
 
 #3. display welcome message when opening the program
+print("\nThink ya got the smarts? Then try this out! WELCOME to the QUIZ PLAYER!!")
+print("Answer questions made from the Quiz Creator program, and test your brain!")
 
 #4. shuffle the questions, and start the quiz
 
