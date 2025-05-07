@@ -1,3 +1,7 @@
+import json
+import random
+from colorama import init, Fore, Style
+
 #1. initialize colorama
 
 #2. load the json file containing the quiz questions
