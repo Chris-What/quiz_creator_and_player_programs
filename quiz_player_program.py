@@ -10,7 +10,7 @@ filename = "quiz_questions.json"
 
 try:
     with open(filename, "r") as file:
-        quiz_date = json.load(file)
+        quiz_data = json.load(file)
 except FileNotFoundError:
     print("Hmm... There's no quiz file, yet. Try using the Quiz Creator program first in order to use this one!")
     exit()
@@ -20,6 +20,7 @@ print("\nThink ya got the smarts? Then try this out! WELCOME to the QUIZ PLAYER!
 print("Answer questions made from the Quiz Creator program, and test your brain!")
 
 #4. shuffle the questions, and start the quiz
+random.shuffle(quiz_data)
 
 #5. display the final score achieved
 
