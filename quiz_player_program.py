@@ -55,3 +55,4 @@ else:
     print("Oh... Don't worry, we all have those moments. Just keep trying and you'll get there!")
 
 #6. display final message when done with the quiz
+print("\nNo matter if your score is low or high, what matters is that we learn, and have fun while doing so! Thank you, dear user, for answering this quiz in the QUIZ PLAYER PROGRAM!!!")
