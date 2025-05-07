@@ -27,9 +27,9 @@ while True:
 
 #4. Add the questions as a dictionary
     item = {
-        "Question": question,
-        "Choices": choices,
-        "Correct Answer": correct_ans
+        "question": question,
+        "choices": choices,
+        "correct_answer": correct_ans
 }
 
     quiz_data.append(item)
