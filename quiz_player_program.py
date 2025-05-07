@@ -3,6 +3,7 @@ import random
 from colorama import init, Fore, Style
 
 #1. initialize colorama
+init(autoreset=True)
 
 #2. load the json file containing the quiz questions
 
