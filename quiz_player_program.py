@@ -40,5 +40,18 @@ for number, item in enumerate(quiz_data, start=1):
         print(f'Not quite! The correct answer is {correct}: {item["choices"][correct]}')
 
 #5. display the final score achieved
+print("\nMade it to the end! Hardly broke a sweat? Or were tears running down your face? Let's find out if you aced this quiz!")
+print(f"Drumroll please! *krrrr....*\nYour score is.... {score} out of {total}!")
+
+percent = (score / total) * 100
+
+if percent == 100:
+    print("Are you Albert Einstein or something?? You're a GENIUS!!!")
+elif percent >= 75:
+    print("Ya got a bright future ahead of ya, kid. One day, you might be in the history books!")
+elif percent >= 50:
+    print("Not bad! Keep working and you'll be better in no time!")
+else:
+    print("Oh... Don't worry, we all have those moments. Just keep trying and you'll get there!")
 
 #6. display final message when done with the quiz
